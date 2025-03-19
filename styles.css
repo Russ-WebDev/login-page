@@ -6,12 +6,8 @@ body {
     margin: 0;
     background: #3572EF;
     font-family: "Poppins", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
     width: 100vw;
@@ -22,18 +18,22 @@ body {
     overflow: hidden;
 }
 
+.logo {
+    width: 200px;
+    image-rendering: crisp-edges;
+
+}
+
 .form {
     position: relative;
     z-index: 1;
     width: 500px;
-    max-height: 90%;
-    /* border: 1px solid #000000; */
+    height: 68%;
     margin: 0 auto 5px;
     padding: 45px;
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 
@@ -56,31 +56,30 @@ body {
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
+    font-weight: lighter;
 }
 
 .otp-input {
     background: #e2e2e2;
+    width: 100%;
     height: 100%;
 
 }
 
 
 .form button {
-    margin-top: 15px;
+    margin-top: 30px;
     font-weight: 600;
-    border-radius: 0.25rem;
-    text-transform: titlecase;
     outline: 0;
     background: #2F477C;
-    width: 60%;
+    width: 50%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
-    font-size: 20px;
-    -webkit-transition: all 0.3 ease;
+    font-size: 16px;
     transition: all 0.3 ease;
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .form button:hover,
@@ -90,7 +89,6 @@ body {
     color: #3572EF
 }
 
-/* OTP BUTTON */
 .otp-wrap {
     outline: 0;
     display: flex;
@@ -103,9 +101,10 @@ body {
 }
 
 .otp-wrap button {
+    background: #5582E2;
     border: 2px;
     height: 100%;
-    width: 7 rem;
+    width: 30%;
     padding: 0.5rem;
     font-size: 14px;
     border-radius: 0.5rem;
@@ -124,5 +123,9 @@ body {
     width: 100vw;
     height: 100vh;
     background: rgba(47, 71, 124, 0.75);
-    /* backdrop-filter: blur(10px); */
+
+}
+
+.validateInput {
+    color: #2F477C;
 }
