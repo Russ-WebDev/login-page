@@ -1,7 +1,6 @@
 <?php
-
+include __DIR__ . "/constant.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +17,13 @@
 </head>
 
 <body>
+    <img class="mec-background" src="<?php echo $ASSETS_PATH; ?>/mec1.jpg" alt="Logo" />
+    <div class="main-background"></div>
     <div class="login-page">
         <div class="form">
             <!-- Login Form -->
             <form class="login-form" method="POST" action="">
+                <img src="<?php echo $ASSETS_PATH; ?>/mec_logo.png" alt="Logo" />
                 <p>Email Account:</p>
                 <input type="text" name="username" placeholder="Enter your email" required />
                 <p>Password:</p>

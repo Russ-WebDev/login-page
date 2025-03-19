@@ -3,6 +3,7 @@
 }
 
 body {
+    margin: 0;
     background: #3572EF;
     font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -26,11 +27,11 @@ body {
     z-index: 1;
     width: 500px;
     max-height: 90%;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     margin: 0 auto 5px;
     padding: 45px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -104,8 +105,24 @@ body {
 .otp-wrap button {
     border: 2px;
     height: 100%;
-    width: 7rem;
+    width: 7 rem;
     padding: 0.5rem;
-    font-size: 10px;
+    font-size: 14px;
     border-radius: 0.5rem;
+}
+
+.mec-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+.main-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(47, 71, 124, 0.75);
+    /* backdrop-filter: blur(10px); */
 }
